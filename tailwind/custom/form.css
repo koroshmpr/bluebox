@@ -1,0 +1,44 @@
+.gform_wrapper {
+	@apply text-white;
+	.gfield_label.gform-field-label {
+		@apply mb-8 lg:mb-6 lg:text-xl
+	}
+	.gform-loader {
+		@apply fixed left-2 top-2;
+	}
+	.gform_fields {
+		@apply max-lg:!flex flex-wrap;
+		.gfield {
+			@apply max-lg:w-full;
+		}
+		.gfield--type-submit{
+			@apply max-lg:w-fit;
+		}
+	}
+
+	.gform_required_legend {
+		@apply !hidden
+	}
+	input[id^="gform_submit_button_"]{
+		@apply !border-white/20 !bg-transparent !px-12 !py-4
+	}
+	.gform_body {
+
+		input:not([type="submit"]):not([type="file"]),  textarea {
+			&::placeholder {
+				@apply text-white/60
+			}
+			@apply !bg-transparent !border !border-white/20 max-lg:!w-full p-5;
+		}
+
+		input:not([type="submit"]), select {
+			@apply  max-lg:!w-full;
+		}
+	}
+}
+
+.gfield--type-fileupload {
+	input[type="file"] {
+		@apply !bg-transparent !border !border-white/20 max-lg:!w-full !text-white;
+	}
+}
