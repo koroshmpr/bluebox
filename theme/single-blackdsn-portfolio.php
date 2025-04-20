@@ -40,7 +40,7 @@ $related = get_field('related_category');
 	</section>
 <?php endif; ?>
 <?php if ($des) : ?>
-	<article class="container py-8 leading-12 text-white/70">
+	<article class="container py-8 leading-12 text-justify text-white/70">
 		<?= $des; ?>
 	</article>
 <?php endif; ?>

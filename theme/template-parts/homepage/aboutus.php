@@ -10,6 +10,6 @@
 	</div>
 	<div :class="scrollingDown ? 'lg:scale-95' : (scrollingUp ? '' : '')"
 		 class="lg:basis-2/5 basis-full max-lg:absolute h-full inset-0 z-[0] bg-cover bg-left transition-all duration-700">
-		<img class="size-full object-cover" src="<?= $about['image']['url'] ?? ''; ?>" alt="">
+		<img class="size-full object-cover" src="<?= $about['image']['url'] ?? ''; ?>" alt="<?= $about['image']['title'] ?? ''; ?>">
 	</div>
 </section>

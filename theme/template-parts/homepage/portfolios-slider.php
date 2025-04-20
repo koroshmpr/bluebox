@@ -52,5 +52,24 @@
 			class="lg:absolute end-0 inset-y-0 w-full lg:!w-[30vw] lg:text-start text-stroke-3 justify-center text-transparent !stroke-white/30 flex items-center max-lg:h-[200px] lg:text-[7vw] text-center text-6xl max-lg:px-8">
 			<?= $portfolioSection['last-slide'] ?>
 		</div>
+		<?php $svgSize = '28';
+		$arrowClass = 'absolute bg-white/30 text-white p-0.5 lg:p-2 top-1/2 shadow -translate-y-1/2 z-[5] hover:brightness-150 rounded-xl lg:rounded-2xl';
+		?>
+		<div class="max-lg:me-2 end-0 portfolio-next-portfolios <?= $arrowClass; ?>">
+			<svg width="<?= $svgSize; ?>" height="<?= $svgSize; ?>" fill="currentColor"
+				 class="bi bi-chevron-right"
+				 viewBox="0 0 16 16">
+				<path fill-rule="evenodd"
+					  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+			</svg>
+		</div>
+		<div class="max-lg:ms-2 start-0 portfolio-prev-portfolios  <?= $arrowClass; ?>">
+			<svg width="<?= $svgSize; ?>" height="<?= $svgSize; ?>" fill="currentColor"
+				 class="bi bi-chevron-left"
+				 viewBox="0 0 16 16">
+				<path fill-rule="evenodd"
+					  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+			</svg>
+		</div>
 	</div>
 </section>

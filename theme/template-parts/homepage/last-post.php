@@ -44,8 +44,8 @@ $query = !empty($args) ? new WP_Query($args) : null;
 							<?php endforeach; ?>
 						</p>
 					<?php endif; ?>
-					<a href="<?php the_permalink(); ?>" class="text-white transition-all mt-3 ps-4 hover:ps-12 h-8 duration-500 relative items-center flex gap-x-2 group">
-						<span class="group-hover:p-3 absolute start-0 top-1/2 rounded-full duration-500 bg-foreground duration text-white border group-hover:border-white/5 p-0.5">
+					<a href="<?php the_permalink(); ?>" class="text-white transition-all mt-3 h-8 duration-500 relative items-center flex gap-x-2 group">
+						<span class="group-hover:p-3 rounded-full duration-500 bg-foreground duration text-white border group-hover:border-white/5 p-0.5">
 							<svg width="20" height="20" fill="currentColor"
 								 class="bi bi-chevron-right scale-0 size-0 transition-all duration-500 origin-top-right group-hover:scale-100 group-hover:size-fit" viewBox="0 0 16 16">
   									<path fill-rule="evenodd"
